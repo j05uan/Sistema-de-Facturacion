@@ -1,7 +1,5 @@
-const listaProductos={
-
-}
-
+const listaProductos=[
+];
 
 function cargarProductos() {
     for (let i = 1; i <= 10; i++) {
@@ -58,6 +56,7 @@ const crearProducto=()=>{
 
     alert ('Producto Creado Con exito!');
     console.log(listaProductos);
+    actualizarProductosEnFacturas();
 
     return nuevoProducto;
 
@@ -82,7 +81,7 @@ const mostrarListado=()=>{
     listadoProductos.appendChild(ul);
 
     const volverButton=document.createElement('button');
-    volverButton.textContent='Volver al Formulario';
+    volverButton.textContent='Volver al Formulario de Productos';
     volverButton.addEventListener('click',volverFormulario);
     listadoClientes.appendChild(volverButton);
     
